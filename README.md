@@ -2,15 +2,9 @@
 
 A simple platform-independent C driver for the AT24C256C EEPROM, designed for embedded systems using I2C communication. The driver provides basic functionality for reading from and writing to the EEPROM, with support for page-wise and address-based operations.
 
-## Features
-
-- **Page-wise Read/Write**: Write and read bytes from a specific page (512 pages, each 64 bytes).
-- **Memory Address Read/Write**: Write and read bytes starting from any memory address.
-- **Last Address Read**: Read from the last accessed memory address, useful for POST (Power-On Self-Test) tests.
-
 ## Requirements
 
-- An I2C-compatible microcontroller.
+- An microcontroller with atleast one I2C peripheral.
 - Low-level I2C functions and a delay function must be provided by the user.
 
 ## Usage
