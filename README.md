@@ -4,7 +4,7 @@ A simple platform-independent C driver for the AT24C256C EEPROM, designed for em
 
 ## Requirements
 
-- An microcontroller with atleast one I2C peripheral.
+- A microcontroller with atleast one I2C peripheral.
 - Low-level I2C functions and a delay function must be provided by the user.
 
 ## Usage
