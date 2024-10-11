@@ -21,6 +21,8 @@ You need to provide the following low-level functions to handle I2C communicatio
 - **`i2c_read_bytes(uint16_t dev_addr, uint8_t* buf, uint8_t nb_of_bytes)`**: Function to read data over I2C.
 - **`delay_ms(uint32_t t_ms)`**: Function to introduce a delay in milliseconds.
 
+Note that the EEPROM driver is assuming that the I2C driver does not implicitly handle R/W bit for I2C transactions. If this is the case, such as in the case of ST's HAL, then you must make sure the I2C address is the one with R/W bit set to 0 (0xA0 in this case, depending on how your Ax pins are wired).
+
 Create an instance of the `eeprom_obj_t` structure and initialize it with your low-level function pointers:
 
 ```c

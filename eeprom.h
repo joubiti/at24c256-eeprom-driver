@@ -62,11 +62,3 @@ void eeprom_write_bytes(eeprom_obj_t* obj, const uint8_t* data, uint8_t nb_of_by
  */
 void eeprom_read_bytes(eeprom_obj_t* obj,  uint8_t* buf, uint8_t nb_of_bytes, uint16_t memory_address);
 
-/**
- * @brief Reads from last accessed EEPROM memory address
- * @note To be used for POST tests
- * 
- * @param obj: pointer to EEPROM object
- * @return uint8_t 
- */
-uint8_t eeprom_read_byte_from_last_address(eeprom_obj_t* obj);

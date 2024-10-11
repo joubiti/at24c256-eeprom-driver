@@ -67,11 +67,6 @@ void eeprom_read_bytes(eeprom_obj_t* obj,  uint8_t* buf, uint8_t nb_of_bytes, ui
 }
 
 
-uint8_t eeprom_read_byte_from_last_address(eeprom_obj_t* obj){
-    uint8_t tmp;
-    obj->i2c_read_bytes(EEPROM_READ_ADDR, &tmp, 1);
-    return tmp;
-}
 
 
 
